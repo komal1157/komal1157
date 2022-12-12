@@ -1,0 +1,22 @@
+Write a Python program to compute following operations on String:
+# a) To display word with the longest length
+# b) To determines the frequency of occurrence of particular character in the string
+# c) To check whether given string is palindrome or not
+# d) To display index of first appearance of the substring
+# e) To count the occurrences of each word in a given string.
+
+
+# a) To display word with the longest length
+
+sentence = input("Enter string: ")
+
+longest = max(sentence.split(), key=len)
+
+print("Longest word is: ", longest)
+print("And its length is: ", len(longest))
+
+
+# b) To determines the frequency of occurrence of particular character in the string
+
+# using naive method to get count of each element in string
+all_freq = {}
